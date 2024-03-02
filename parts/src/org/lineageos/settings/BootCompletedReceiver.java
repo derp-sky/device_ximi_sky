@@ -21,13 +21,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.IBinder;
+import android.util.Log;
 import android.view.Display.HdrCapabilities;
 import android.view.SurfaceControl;
 
-import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
+
+    private static final String TAG = "XiaomiParts-BCR";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
@@ -35,8 +37,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             return;
         }
 
-        // Dirac
-        DiracUtils.onBootCompleted(context);
+        Log.i(TAG, "Boot completed");
 
         // Thermal Profiles
         ThermalUtils.startService(context);
