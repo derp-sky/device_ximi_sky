@@ -15,10 +15,6 @@
     <!-- Xiaomi Parts -->
     <string name="app_name">Xiaomi Parts</string>
 
-    <!-- Ambient settings -->
-    <string name="ambient_enable">Use ambient display</string>
-
-
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal profiles</string>
     <string name="thermal_summary">Per-app thermal profile configuration</string>

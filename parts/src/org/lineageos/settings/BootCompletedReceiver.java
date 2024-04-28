@@ -37,8 +37,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             return;
         }
 
-        Log.i(TAG, "Boot completed");
-
         // Thermal Profiles
         ThermalUtils.startService(context);
 
