@@ -21,6 +21,9 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/sky/sky-vendor.mk)
 
+# Derpfest
+DERP_BUILDTYPE := Official
+
 ## Device identifier
 PRODUCT_DEVICE := sky
 PRODUCT_NAME := derp_sky
